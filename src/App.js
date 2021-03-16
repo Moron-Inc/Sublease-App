@@ -8,20 +8,22 @@ import { WatchList } from './WatchList';
 import { MyFeed } from './MyFeed';
 import { Cart } from './Cart';
 import { Signup_Login } from './Signup_Login';
-// import { NoMatch } from './NoMatch';
+import { Home } from './Home';
+import { NoMatch } from './NoMatch';
 
 function App() {
   return (
     <React.Fragment>
       <Router>
+        <NavigationBar />
         <Switch>
+          <Route exact path="/" component={Home} />
           <Route path="/WatchList" component={WatchList} />
           <Route path="/MyFeed" component={MyFeed} />
           <Route path="/Cart" component={Cart} />
           <Route path="/Signup_Login" component={Signup_Login} />
-          {/* <Route component={NoMatch} /> */}
+          <Route component={NoMatch} />
         </Switch>
-        <NavigationBar />
       </Router>
     </React.Fragment>
     // <div className="App">

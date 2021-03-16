@@ -12,6 +12,6 @@ const GridWrapper = styled.div`
 export const Cart = () => (
   <GridWrapper>
     <h2>Cart</h2>
-    <p>I am aware that the text for Cart is in the wrong place I just haven't gotten around to fixing it</p>
+    <p>Mario Kart</p>
   </GridWrapper>
 )

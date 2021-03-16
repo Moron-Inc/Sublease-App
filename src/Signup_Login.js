@@ -12,6 +12,6 @@ const GridWrapper = styled.div`
 export const Signup_Login = () => (
   <GridWrapper>
     <h2>Sign Up/Log In</h2>
-    <p>I am aware that the text for Sign Up/Log In is in the wrong place I just haven't gotten around to fixing it</p>
+    <p>Make an account you poop</p>
   </GridWrapper>
 )

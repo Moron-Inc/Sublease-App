@@ -12,6 +12,6 @@ const GridWrapper = styled.div`
 export const MyFeed = () => (
   <GridWrapper>
     <h2>My Feed</h2>
-    <p>I am aware that the text for My Feed is in the wrong place I just haven't gotten around to fixing it</p>
+    <p>Feed me plz I'm hungy</p>
   </GridWrapper>
 )

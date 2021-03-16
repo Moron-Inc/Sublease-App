@@ -8,11 +8,10 @@ const GridWrapper = styled.div`
   margin-right: 6em;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(25px, auto);
-`;
-export const WatchList = (props) => (
+`; 
+export const Home = () => (
   <GridWrapper>
-    <h2>Watch List</h2>
-    <p>Every breath you take, Every move you make, Every bond you break, Every step you take, I'll be watching you </p>
-    <p>Every single day, Every word you say, Every game you play, Every night you stay, I'll be watching you</p>
+    <h2>Home</h2>
+    <p>Home home homey home home yuh its a home page home-ies homemememe</p>
   </GridWrapper>
 )
