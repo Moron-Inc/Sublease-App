@@ -1,17 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-const GridWrapper = styled.div`
-  display: grid;
-  grid-gap: 10px;
+import Logo from './images/MarioKartBanner.jpg';
+
+const Wrapper = styled.div`
   margin-top: 1em;
   margin-left: 6em;
   margin-right: 6em;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(25px, auto);
-`; 
+`;
+
 export const Cart = () => (
-  <GridWrapper>
+  <Wrapper>
     <h2>Cart</h2>
-    <p>Mario Kart</p>
-  </GridWrapper>
+    <img src={Logo}/>
+  </Wrapper>
 )
