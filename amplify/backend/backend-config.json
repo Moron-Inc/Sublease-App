@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "subleaseapp63a2ee08": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
