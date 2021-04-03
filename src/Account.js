@@ -7,9 +7,9 @@ const Wrapper = styled.div`
   margin-right: 6em;
 `;
 
-export const Signup_Login = () => (
+export const Account = () => (
   <Wrapper>
-    <h2>Sign Up/Log In</h2>
+    <h2>Account</h2>
     <p>Make an account you poop</p>
   </Wrapper>
 )

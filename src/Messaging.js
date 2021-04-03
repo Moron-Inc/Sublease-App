@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Logo from './images/MarioKartBanner.jpg';
 
 const Wrapper = styled.div`
   margin-top: 1em;
@@ -8,9 +7,9 @@ const Wrapper = styled.div`
   margin-right: 6em;
 `;
 
-export const Cart = () => (
+export const Messaging = (props) => (
   <Wrapper>
-    <h2>Cart</h2>
-    <img src={Logo}/>
+    <h2>Messaging</h2>
+    <p>Get social bud</p>
   </Wrapper>
 )
