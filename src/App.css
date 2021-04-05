@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -30,28 +31,21 @@
 
 .image { 
   position: relative; 
-  width: 100%; /* for IE 6 */
-}
-
-h3 span{ 
-  position: absolute; 
-  top: 200px; 
-  left: 0; 
-  width: 100%; 
+  width: 100%;
 }
 
 Form span{
   position: absolute; 
-  top: 250px; 
+  top: 50%; 
   left: 25%; 
   width: 50%;
 }
 
-
-.container{
+.custom-container{
   background-image: url(./images/MarioKartBanner.jpg);
-  position: absolute;
-  width: auto;
+  background-size: cover;
+  position: relative;
+  width: 100%;
   height: 50%;
 }
 
