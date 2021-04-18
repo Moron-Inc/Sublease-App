@@ -1,6 +1,7 @@
 import React from 'react';
-import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
+import Logo from '../images/moronlogo.png'
 const Styles = styled.div`
   .navbar { background-color: white; }
   a, .navbar-nav, .navbar-light .nav-link {
@@ -21,17 +22,13 @@ const Styles = styled.div`
 export const NavigationBar = () => (
   <Styles>
     <Navbar expand="lg">
-      <Navbar.Brand href="/">Sublease App</Navbar.Brand>
+      <Navbar.Brand href="/"><img className="logo" src={Logo}/>Sublease App</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-      <Form className="form-center">
-        <FormControl type="text" placeholder="Search" className="" />
-      </Form>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-            <Nav.Item><Nav.Link href="/WatchList">Watch List</Nav.Link></Nav.Item> 
-            <Nav.Item><Nav.Link href="/MyFeed">My Feed</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link href="/Messaging">Messaging</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link href="/Account">Account</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link href="/About">About</Nav.Link></Nav.Item> 
+            <Nav.Item><Nav.Link href="/ContactUs">Contact Us</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link href="/Login">Login</Nav.Link></Nav.Item>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, FormControl } from 'react-bootstrap';
+import { Form, FormControl, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -33,6 +33,21 @@ export const Home = () => (
       <Form className="form-center">
         <span><FormControl type="text" placeholder="Search" className="" /></span>
       </Form>
-    </div>    
+    </div>  
+    <div className='spacer-div'></div>
+    <Row className="column-container">
+      <Col className="column-content1">
+        <h3>How it Works #1</h3>
+        <p>arbitrary text #1</p>
+      </Col>
+      <Col className="column-content2">
+        <h3>How it Works #2</h3>
+        <p>arbitrary text #2</p>
+      </Col>
+    </Row>
+    <div className='spacer-div'></div>
+    <div className='spacer-div'></div>
+    <div className='spacer-div'></div>
+    <div className="footer">footer directory stuff</div>
   </Wrapper>
 )

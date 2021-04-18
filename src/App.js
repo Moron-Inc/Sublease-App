@@ -3,8 +3,8 @@ import './App.css';
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { NavigationBar_loggedin } from './components/NavigationBar_loggedin';
 import { NavigationBar } from './components/NavigationBar';
-import { NavBarB4Dash } from './components/NavBarB4Dash';
 import { HomeDash } from './HomeDash';
 import { WatchList } from './WatchList';
 import { MyFeed } from './MyFeed';
@@ -20,7 +20,7 @@ function App() {
   return (
     <React.Fragment>
       <Router>
-        <NavBarB4Dash/>
+        <NavigationBar/>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/About" component={About} />
@@ -28,7 +28,7 @@ function App() {
           <Route path="/Login" component={Login} />
           <Route component={NoMatch} />
         </Switch>
-        {/* <NavigationBar />
+        {/* <NavigationBar_loggedin />
         <Switch>
           <Route exact path="/" component={HomeDash} />
           <Route path="/WatchList" component={WatchList} />

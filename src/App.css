@@ -34,6 +34,11 @@
   width: 100%;
 }
 
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
 Form span{
   position: absolute; 
   top: 50%; 
@@ -46,7 +51,32 @@ Form span{
   background-size: cover;
   position: relative;
   width: 100%;
-  height: 50%;
+  height: 65%;
+}
+
+.spacer-div{
+  height: 50px;
+}
+.column-container {
+  justify-content: space-evenly;
+}
+
+.column-content1 {
+  justify-content: center;
+  text-align: center;
+  border-right: 2px dotted;
+}
+
+.column-content2 {
+  justify-content: center;
+  text-align: center;
+}
+
+.footer {
+  background: turquoise;
+  padding: 8em 0;
+  color: black;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
