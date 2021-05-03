@@ -1,40 +1,38 @@
 import React from 'react';
-import { Form, FormControl, Row, Col } from 'react-bootstrap';
+import { Form, FormControl, Row, Col, ButtonGroup, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  margin-top: 1em;
   width: 100%;
   height: 100vh;
 `;
 
-// const Styles = styled.div`
-//   .navbar { background-color: white; }
-//   a, .navbar-nav, .navbar-light .nav-link {
-//     color: black;
-//     &:hover { color: blue; }
-//   }
-//   .navbar-brand {
-//     font-size: 1.4em;
-//     color: black;
-//     &:hover { color: blue; }
-//   }
-//   .form-center {
-//     position: absolute !important;
-//     left: 25%;
-//     right: 25%;
-//   }
-// `;
+var borderstyling = {border: "2px dotted bottom"}
 
 
 export const Home = () => (
   <Wrapper>
     <div className="custom-container">
-      <Form className="form-center">
-        <span><FormControl type="text" placeholder="Search" className="" /></span>
+      <Form>
+        <span>
+          <FormControl type="text" placeholder="Search" className="" />
+          <ButtonGroup>
+            <Button variant="info">Subleaser</Button>
+            <Button variant="info">Subleasee</Button>
+          </ButtonGroup>
+        </span>
       </Form>
-    </div>  
+    </div> 
+
     <div className='spacer-div'></div>
+
+    <Row style={{justifyContent: "space-evenly"}}>
+      <div style={{width: "75%", textAlign: "center"}}>
+        <h2 style={{borderBottom: "2px dotted"}}>How It Works</h2>
+      </div>
+    </Row>
+
+
     <Row className="column-container">
       <Col className="column-content1">
         <h3>How it Works #1</h3>
@@ -45,6 +43,7 @@ export const Home = () => (
         <p>arbitrary text #2</p>
       </Col>
     </Row>
+
     <div className='spacer-div'></div>
     <div className='spacer-div'></div>
     <div className='spacer-div'></div>
