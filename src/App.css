@@ -68,6 +68,11 @@ Form span{
   justify-content: space-evenly;
 }
 
+.row-padding {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 .column-centered {
   justify-content: center;
   text-align: center;
