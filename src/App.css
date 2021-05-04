@@ -39,6 +39,12 @@
   width: 50px;
 }
 
+.pfp {
+  height: 300px;
+  width: 240px;
+  border-radius: 50%;
+}
+
 Form span{
   position: absolute; 
   top: 50%; 
@@ -58,17 +64,11 @@ Form span{
   height: 50px;
 }
 
-.column-container {
+.row-centered {
   justify-content: space-evenly;
 }
 
-.column-content1 {
-  justify-content: center;
-  text-align: center;
-  border-right: 2px dotted;
-}
-
-.column-content2 {
+.column-centered {
   justify-content: center;
   text-align: center;
 }

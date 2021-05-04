@@ -26,19 +26,19 @@ export const Home = () => (
 
     <div className='spacer-div'></div>
 
-    <Row style={{justifyContent: "space-evenly"}}>
+    <Row className="row-centered">
       <div style={{width: "75%", textAlign: "center"}}>
         <h2 style={{borderBottom: "2px dotted"}}>How It Works</h2>
       </div>
     </Row>
 
 
-    <Row className="column-container">
-      <Col className="column-content1">
+    <Row className="row-centered">
+      <Col className="column-centered" style={{borderRight: "2px dotted"}}>
         <h3>How it Works #1</h3>
         <p>arbitrary text #1</p>
       </Col>
-      <Col className="column-content2">
+      <Col className="column-centered">
         <h3>How it Works #2</h3>
         <p>arbitrary text #2</p>
       </Col>
