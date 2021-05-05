@@ -48,7 +48,6 @@ export const About = (props) => (
 
 
     {members.map(function(val, index) {
-      // if (index%2 == 0){
         return(
           <div>
             <Row className="row-padding">
@@ -66,6 +65,9 @@ export const About = (props) => (
                 <img className="pfp" src={val.image}/>
               </Col>
             </Row>
+            <div className='spacer-div'></div>
+            <div className='spacer-div'></div>
+            <div className='spacer-div'></div>
             <div className='spacer-div'></div>
           </div>
         )

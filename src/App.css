@@ -42,7 +42,7 @@
 .pfp {
   height: 300px;
   width: 240px;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 
 Form span{
@@ -69,8 +69,8 @@ Form span{
 }
 
 .row-padding {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .column-centered {
