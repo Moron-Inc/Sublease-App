@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -10,10 +9,9 @@ import { WatchList } from './pages/WatchList';
 import { MyFeed } from './pages/MyFeed';
 import { Account } from './pages/Account';
 import { Messaging } from './pages/Messaging';
-import { Home } from './pages//Home';
+import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { ContactUs } from './pages/ContactUs';
-import { Login } from './pages/Login';
 import { NoMatch } from './pages/NoMatch';
 
 function App() {
@@ -25,7 +23,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/pages/About" component={About} />
           <Route path="/pages/ContactUs" component={ContactUs} />
-          <Route path="/pages/Login" component={Login} />
+          {/* <Route path="/pages/Login" component={Login} /> */}
           <Route component={NoMatch} />
         </Switch>
         {/* <NavigationBar_loggedin />

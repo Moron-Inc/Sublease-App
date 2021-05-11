@@ -1,8 +1,6 @@
 import React from 'react';
-import { Row, Col, ButtonGroup, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
-import Logo from '../images/moronlogo.png';
-import pfp1 from '../images/Arjun-pfp.jpg';
 import members from '../components/Members';
 
 const Wrapper = styled.div`
@@ -51,7 +49,7 @@ export const About = (props) => (
         return(
           <div>
             <Row className="row-padding">
-              <Col style={{order: (index%2==0)?1:12, justifyContent: "center", textAlign: (index%2==0)?"left":"right"}}>
+              <Col style={{order: (index%2===0)?1:12, justifyContent: "center", textAlign: (index%2===0)?"left":"right"}}>
                 <h3>{val.name}</h3>
                 <p><em>{val.title}</em></p>
                 <h3>{val.bio}</h3>
@@ -61,8 +59,8 @@ export const About = (props) => (
                 <h3>{val.bio}</h3>
                 <h3>{val.bio}</h3>
               </Col>
-              <Col style={{order: (index%2==0)?12:1, justifyContent: "center", textAlign: (index%2==0)?"right":"left"}}>
-                <img className="pfp" src={val.image}/>
+              <Col style={{order: (index%2===0)?12:1, justifyContent: "center", textAlign: (index%2===0)?"right":"left"}}>
+                <img className="pfp" src={val.image} alt={val.alt}/>
               </Col>
             </Row>
             <div className='spacer-div'></div>

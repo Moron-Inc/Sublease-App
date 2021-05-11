@@ -85,6 +85,39 @@ Form span{
   text-align: center;
 }
 
+.mymodal-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.mymodal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.mymodal-box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 60%;
+  width: 30%;
+  overflow-y: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  z-index: 500;
+  padding: 40px;
+  border-radius: 8px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

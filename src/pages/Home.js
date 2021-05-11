@@ -7,19 +7,26 @@ const Wrapper = styled.div`
   height: 100vh;
 `;
 
-var borderstyling = {border: "2px dotted bottom"}
-
-
 export const Home = () => (
   <Wrapper>
     <div className="custom-container">
       <Form>
         <span>
-          <FormControl type="text" placeholder="Search" className="" />
-          <ButtonGroup>
-            <Button variant="info">Subleaser</Button>
-            <Button variant="info">Subleasee</Button>
-          </ButtonGroup>
+            <Row>
+              <Col style={{padding: "0px",}}>
+                <FormControl type="text" placeholder="Search" className="" />
+              </Col>
+              <Col style={{padding: "0px", maxWidth: "fit-content"}}>
+                <Button variant="secondary">Search</Button>
+              </Col>
+            </Row>
+
+            <Row>
+              <ButtonGroup>
+                <Button variant="info mr-1">Subleaser</Button>
+                <Button variant="info">Subleasee</Button>
+              </ButtonGroup>
+            </Row>
         </span>
       </Form>
     </div> 
