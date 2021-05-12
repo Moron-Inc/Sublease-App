@@ -1,6 +1,7 @@
 import React from 'react';
-import { Form, FormControl, Row, Col, ButtonGroup, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
+import { SearchBar } from '../components/SearchBar';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -10,25 +11,7 @@ const Wrapper = styled.div`
 export const Home = () => (
   <Wrapper>
     <div className="custom-container">
-      <Form>
-        <span>
-            <Row>
-              <Col style={{padding: "0px",}}>
-                <FormControl type="text" placeholder="Search" className="" />
-              </Col>
-              <Col style={{padding: "0px", maxWidth: "fit-content"}}>
-                <Button variant="secondary">Search</Button>
-              </Col>
-            </Row>
-
-            <Row>
-              <ButtonGroup>
-                <Button variant="info mr-1">Subleaser</Button>
-                <Button variant="info">Subleasee</Button>
-              </ButtonGroup>
-            </Row>
-        </span>
-      </Form>
+      <SearchBar/>
     </div> 
 
     <div className='spacer-div'></div>

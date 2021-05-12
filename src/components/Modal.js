@@ -1,7 +1,4 @@
-import React, {useRef, useState, forwardRef, useImperativeHandle} from 'react';
-import styled from 'styled-components';
-import { Form, FormControl, Row, Col, ButtonGroup, Button } from 'react-bootstrap';
-import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
+import React, { useState, forwardRef, useImperativeHandle } from 'react';
 import ReactDOM from "react-dom";
 
 const Modal = forwardRef((props, ref) => {

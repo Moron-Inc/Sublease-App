@@ -1,9 +1,9 @@
-import React, {useRef, useState, forwardRef, useImperativeHandle} from 'react';
-import { Nav, Navbar,  ButtonGroup, Button } from 'react-bootstrap';
+import React from 'react';
+import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 import Logo from '../images/moronlogo.png'
-import {Login} from './Login';
-import Modal from './Modal';
+import { Login } from './Login';
+
 const Styles = styled.div`
   .navbar { background-color: white; }
   a, .navbar-nav, .navbar-light .nav-link {
@@ -22,16 +22,11 @@ const Styles = styled.div`
   }
 `;
 export const NavigationBar = () => {
-  const modalRef = useRef();
-
-  const openModal = () => {
-    modalRef.current.openModal();
-  };
 
   return(
     <Styles>
       <Navbar expand="lg">
-        <Navbar.Brand href="/" style={{paddingLeft: "4%"}}><img className="logo" src={Logo} alt="Moron Logo"/>Sublease App</Navbar.Brand>
+        <Navbar.Brand href="/" style={{paddingLeft: "4%"}}><img className="logo mr-1" src={Logo} alt="Moron Logo"/>Sublease App</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto" style={{paddingRight: "4%", alignItems: "center"}}>
