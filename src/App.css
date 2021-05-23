@@ -125,9 +125,14 @@ Form span{
   padding: 10px;
 }
 
-.navbar-nav .nav-link {
-  padding-right: 10px;
-  padding-left: 10px;
+.nav-link{
+  color: black;
+}
+.nav-link:hover{
+  color:#00A5AF;
+}
+.nav-tabs, .nav-tabs:hover, .nav-tabs:focus {
+  color: white;
 }
 
 
