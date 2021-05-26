@@ -1,4 +1,4 @@
-
+/*#6A5ACD*/
 .App {
   text-align: center;
 }
@@ -26,7 +26,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #6A5ACD; /*#61dafb*/
 }
 
 .image { 
@@ -36,7 +36,7 @@
 
 .logo {
   height: 50px;
-  width: 50px;
+  width: 110px;
 }
 
 .pfp {
@@ -81,7 +81,7 @@ Form span{
 .footer {
   background: #E7E7E7;
   padding: 8em 0;
-  color:#00A5AF;
+  color:#6A5ACD;            /*00A5AF*/
   text-align: center;
 }
 
@@ -129,12 +129,28 @@ Form span{
   color: black;
 }
 .nav-link:hover{
-  color:#00A5AF;
+  color:#6A5ACD;
 }
 .nav-tabs, .nav-tabs:hover, .nav-tabs:focus {
   color: white;
 }
 
+.btn-outline-info:not(:disabled):not(.disabled).active, .btn-outline-info:not(:disabled):not(.disabled):active, .show>.btn-outline-info.dropdown-toggle{
+  color: #fff !important;
+  background-color: #6A5ACD !important;
+  border-color: #6A5ACD !important;
+}
+
+.btn-outline-info {
+  color: #6A5ACD !important;
+  border-color: #6A5ACD !important;
+}
+
+.btn-outline-info:hover {
+  color: #fff !important;
+  background-color: #6A5ACD !important;
+  border-color: #6A5ACD !important;
+}
 
 @keyframes App-logo-spin {
   from {

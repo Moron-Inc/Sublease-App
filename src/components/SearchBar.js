@@ -1,5 +1,5 @@
-import React from 'react';
-import { Form, FormControl, Row, Col, ButtonGroup, Button } from 'react-bootstrap';
+import React, {useState} from 'react';
+import { ToggleButton, Form, FormControl, Row, Col, ButtonGroup, Button } from 'react-bootstrap';
 import { useHistory } from "react-router-dom";
 
 export const SearchBar = () => {
@@ -11,9 +11,21 @@ export const SearchBar = () => {
         history.push(path);
     }
 
+    const radios = [
+        { name: 'Subleaser', value: '1' },
+        { name: 'Subleasee', value: '2' },
+      ];
+    
+    const [checked, setChecked] = useState(false);
+    const [radioValue, setRadioValue] = useState('1');
+
     return(
         <Form onSubmit={routeChange}>
             <span>
+                <Row>
+                    <Col><h1 style={{textAlign: "center" , color: "#6A5ACD"}}>FIND A DEAL</h1></Col>
+                </Row>
+                <br/>
                 <Row>
                     <Col style={{padding: "0px",}}>
                         <FormControl type="text" placeholder="Search" className="" />
@@ -24,9 +36,21 @@ export const SearchBar = () => {
                 </Row>
 
                 <Row>
-                    <ButtonGroup>
-                        <Button variant="info mr-1">Subleaser</Button>
-                        <Button variant="info">Subleasee</Button>
+                    <ButtonGroup toggle>
+                        {radios.map((radio, idx) => (
+                            <ToggleButton
+                                key={idx}
+                                type="radio"
+                                variant="outline-info"
+                                className=""
+                                name="radio"
+                                value={radio.value}
+                                checked={radioValue === radio.value}
+                                onChange={(e) => setRadioValue(e.currentTarget.value)}
+                            >
+                                {radio.name}
+                            </ToggleButton>
+                            ))}
                     </ButtonGroup>
                 </Row>
             </span>
