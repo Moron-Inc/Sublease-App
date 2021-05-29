@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
-import { ToggleButton, Form, FormControl, Row, Col, ButtonGroup, Button } from 'react-bootstrap';
+import { ToggleButton, InputGroup, Form, FormControl, Row, Col, ButtonGroup, Button } from 'react-bootstrap';
 import { useHistory } from "react-router-dom";
+import titleText from '../images/FindADeal.png';
+import searchIcon from '../images/search.svg';
 
 export const SearchBar = () => {
 
@@ -22,16 +24,17 @@ export const SearchBar = () => {
     return(
         <Form onSubmit={routeChange}>
             <span>
-                <Row>
-                    <Col><h1 style={{textAlign: "center" , color: "#6A5ACD"}}>FIND A DEAL</h1></Col>
+                <Row style={{justifyContent: "center"}}>
+                    <img className="searchbckgndtext" src={titleText} alt="Title Text"/>
                 </Row>
-                <br/>
                 <Row>
                     <Col style={{padding: "0px",}}>
-                        <FormControl type="text" placeholder="Search" className="" />
-                    </Col>
-                    <Col style={{padding: "0px", maxWidth: "fit-content"}}>
-                        <Button variant="secondary" onClick={routeChange}>Search</Button>
+                        <InputGroup>
+                            <FormControl type="text" placeholder="Search" className=""/>
+                            <InputGroup.Append>
+                                <Button style={{backgroundColor: "whitesmoke", borderColor: "lightgrey", maxHeight: "fit-content"}} onClick={routeChange}><img src={searchIcon}/></Button>
+                            </InputGroup.Append>
+                        </InputGroup>
                     </Col>
                 </Row>
 
@@ -42,7 +45,7 @@ export const SearchBar = () => {
                                 key={idx}
                                 type="radio"
                                 variant="outline-info"
-                                className=""
+                                className="radiobtn"
                                 name="radio"
                                 value={radio.value}
                                 checked={radioValue === radio.value}

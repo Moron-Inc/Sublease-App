@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
-import Logo from '../images/subl.jpg'
+import Logo from '../images/subl.jpg';
 import { Login } from './Login';
 
 const Styles = styled.div`
