@@ -32,7 +32,9 @@ export const SearchBar = () => {
                         <InputGroup>
                             <FormControl type="text" placeholder="Search" className=""/>
                             <InputGroup.Append>
-                                <Button style={{backgroundColor: "whitesmoke", borderColor: "lightgrey", maxHeight: "fit-content"}} onClick={routeChange}><img src={searchIcon}/></Button>
+                                <Button style={{backgroundColor: "white", borderColor: "lightgrey", maxHeight: "fit-content", /*borderLeft: "transparent 0px"*/}} onClick={routeChange}>
+                                    <img src={searchIcon}/>
+                                </Button>
                             </InputGroup.Append>
                         </InputGroup>
                     </Col>
