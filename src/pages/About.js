@@ -63,10 +63,10 @@ export const About = (props) => (
                 <img className="pfp" src={val.image} alt={val.alt}/>
               </Col>
             </Row>
-            <div className='spacer-div'></div>
-            <div className='spacer-div'></div>
-            <div className='spacer-div'></div>
-            <div className='spacer-div'></div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
           </div>
         )
     })}

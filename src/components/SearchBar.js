@@ -14,25 +14,25 @@ export const SearchBar = () => {
     }
 
     const radios = [
-        { name: 'Subleaser', value: '1' },
-        { name: 'Subleasee', value: '2' },
+        { name: 'Offers', value: '1' },
+        { name: 'Interests', value: '2' },
       ];
     
     const [checked, setChecked] = useState(false);
     const [radioValue, setRadioValue] = useState('1');
 
     return(
-        <Form onSubmit={routeChange}>
+        <Form action="/pages/SearchResults" method="get" /*onSubmit={routeChange}*/>
             <span>
                 <Row style={{justifyContent: "center"}}>
                     <img className="searchbckgndtext" src={titleText} alt="Title Text"/>
                 </Row>
                 <Row>
-                    <Col style={{padding: "0px",}}>
+                    <Col style={{padding: "0px"}}>
                         <InputGroup>
-                            <FormControl type="text" placeholder="Search" className=""/>
+                            <FormControl type="text" placeholder="Search" className="" name="s"/>
                             <InputGroup.Append>
-                                <Button style={{backgroundColor: "white", borderColor: "lightgrey", maxHeight: "fit-content", /*borderLeft: "transparent 0px"*/}} onClick={routeChange}>
+                                <Button style={{backgroundColor: "white", borderColor: "lightgrey", maxHeight: "fit-content"}} type="submit" /*onClick={routeChange}*/>
                                     <img src={searchIcon}/>
                                 </Button>
                             </InputGroup.Append>

@@ -34,9 +34,9 @@ export const Home = () => (
       </Col>
     </Row>
 
-    <div className='spacer-div'></div>
-    <div className='spacer-div'></div>
-    <div className='spacer-div'></div>
+    <br/>
+    <br/>
+    <br/>
     <div className="footer">footer directory stuff</div>
   </Wrapper>
 )
