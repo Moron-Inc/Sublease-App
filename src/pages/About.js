@@ -10,9 +10,9 @@ const Wrapper = styled.div`
 
 export const About = (props) => (
   <Wrapper>
-    <div className='spacer-div'></div>
-    <div className='spacer-div'></div>
-    <div className='spacer-div'></div>
+    <br/>
+    <br/>
+    <br/>
 
     <Row className="row-centered">
       <div style={{textAlign: "center"}}>
@@ -20,7 +20,8 @@ export const About = (props) => (
       </div>
     </Row>
 
-    <div className='spacer-div'></div>
+    <br/>
+    <br/>
 
     <Row className="row-centered">
       <div style={{textAlign: "center"}}>
@@ -33,7 +34,8 @@ export const About = (props) => (
       </div>
     </Row>
 
-    <div className='spacer-div'></div>
+    <br/>
+    <br/>
 
     <Row className="row-centered">
       <div style={{textAlign: "center"}}>
@@ -41,8 +43,8 @@ export const About = (props) => (
       </div>
     </Row>
 
-    <div className='spacer-div'></div>
-
+    <br/>
+    <br/>
 
 
     {members.map(function(val, index) {
@@ -72,9 +74,9 @@ export const About = (props) => (
     })}
 
 
-    <div className='spacer-div'></div>
-    <div className='spacer-div'></div>
-    <div className='spacer-div'></div>
+    <br/>
+    <br/>
+    <br/>
     <div className="footer">footer directory stuff</div>
   </Wrapper>
 )

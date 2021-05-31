@@ -14,14 +14,14 @@ export const Home = () => (
       <SearchBar/>
     </div> 
 
-    <div className='spacer-div'></div>
+    <br/>
+    <br/>
 
     <Row className="row-centered">
       <div style={{width: "75%", textAlign: "center"}}>
         <h2 style={{borderBottom: "2px dotted"}}>How It Works</h2>
       </div>
     </Row>
-
 
     <Row className="row-centered">
       <Col className="column-centered" style={{borderRight: "2px dotted"}}>

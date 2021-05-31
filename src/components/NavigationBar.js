@@ -21,6 +21,7 @@ const Styles = styled.div`
     right: 25%;
   }
 `;
+
 export const NavigationBar = () => {
 
   return(

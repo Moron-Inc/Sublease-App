@@ -1,28 +1,29 @@
 import React, {useState} from 'react';
 import { ToggleButton, InputGroup, Form, FormControl, Row, Col, ButtonGroup, Button } from 'react-bootstrap';
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import titleText from '../images/FindADeal.png';
 import searchIcon from '../images/search.svg';
 
 export const SearchBar = () => {
 
-    const history = useHistory();
+    // const history = useHistory();
 
-    const routeChange = () => {
-        let path = '../pages/SearchResults';
-        history.push(path);
-    }
+    // const routeChange = () => {
+    //     let path = '../pages/SearchResults';
+    //     history.push(path);
+    // }
+
+    // const [checked, setChecked] = useState(false);
 
     const radios = [
         { name: 'Offers', value: '1' },
         { name: 'Interests', value: '2' },
       ];
     
-    const [checked, setChecked] = useState(false);
     const [radioValue, setRadioValue] = useState('1');
 
     return(
-        <Form action="/pages/SearchResults" method="get" /*onSubmit={routeChange}*/>
+        <Form action="/pages/SearchResults" method="get">
             <span>
                 <Row style={{justifyContent: "center"}}>
                     <img className="searchbckgndtext" src={titleText} alt="Title Text"/>
@@ -32,7 +33,7 @@ export const SearchBar = () => {
                         <InputGroup>
                             <FormControl type="text" placeholder="Search" className="" name="s"/>
                             <InputGroup.Append>
-                                <Button style={{backgroundColor: "white", borderColor: "lightgrey", maxHeight: "fit-content"}} type="submit" /*onClick={routeChange}*/>
+                                <Button className="integratedButton" type="submit">
                                     <img src={searchIcon}/>
                                 </Button>
                             </InputGroup.Append>

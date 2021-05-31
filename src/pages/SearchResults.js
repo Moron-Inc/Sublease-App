@@ -51,7 +51,7 @@ export const SearchResults = (props) => {
 
   return(
     <Wrapper>
-      <h2>Search {(radioInput===1)?"Offer":"Interest"} Results</h2>
+      <h2>Search {(radioInput==1)?"Offer":"Interest"} Results</h2>
       <ul>
           {filteredPosts.map((post) => (
             <li key={post.id}>{post.name}</li>

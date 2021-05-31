@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Form, FormControl, Row, Col, ButtonGroup, Button, Tabs, Tab } from 'react-bootstrap';
 import ReactDOM from "react-dom";
 import Modal from "../components/Modal";
+import termsOfUse from '../components/dummy-terms-of-use.pdf';
 
 
 export const Login = (props) => {
@@ -15,7 +16,7 @@ export const Login = (props) => {
 
     /*a lot of redundant code, try to make it cleaner*/
     <ButtonGroup>
-        <Button variant="outline-info" onClick={openModal}>Signup/Login</Button>
+        <Button variant="outline-info" onClick={openModal} className="openingModal">Signup/Login</Button>
         <Modal ref={modalRef}>
             <button type="button" class="close" aria-label="Close" onClick={() => modalRef.current.close()}>&times;</button>
             <div style={{padding: "30px"}}>
@@ -24,7 +25,7 @@ export const Login = (props) => {
                 <Tab eventKey="returningUser" title="Returning User" style={{padding: "10px"}}>
                   
                   <Form>
-                    <p style={{marginBottom: "2px"}}>Username</p>
+                    <p style={{marginBottom: "2px"}}>Username or Email</p>
                     <FormControl type="text" placeholder="Enter username" className="" style={{marginBottom: "1rem"}}/> 
                     <p style={{marginBottom: "2px"}}>Password</p>
                     <FormControl type="text" placeholder="Enter password" className="" style={{marginBottom: "1rem"}}/> 
@@ -50,6 +51,7 @@ export const Login = (props) => {
                     <p style={{marginBottom: "2px"}}>Confirm Email</p>
                     <FormControl type="text" placeholder="Enter email" className="" style={{marginBottom: "1rem"}}/>
 
+                    <p style={{marginBottom: "2px"}}>Please read the <em><a href = {termsOfUse} style={{color: "black"}} target = "_blank">Terms of Use</a></em></p>
                     <Form.Group controlId="formBasicCheckbox">
                       <Form.Check type="checkbox" label="I agree to the Terms of Use" />
                     </Form.Group>
