@@ -34,7 +34,7 @@ export const SearchBar = () => {
                             <FormControl type="text" placeholder="Search" className="" name="s"/>
                             <InputGroup.Append>
                                 <Button className="integratedButton" type="submit">
-                                    <img src={searchIcon}/>
+                                    <img alt="Search icon" src={searchIcon}/>
                                 </Button>
                             </InputGroup.Append>
                         </InputGroup>

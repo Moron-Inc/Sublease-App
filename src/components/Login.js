@@ -51,7 +51,7 @@ export const Login = (props) => {
                     <p style={{marginBottom: "2px"}}>Confirm Email</p>
                     <FormControl type="text" placeholder="Enter email" className="" style={{marginBottom: "1rem"}}/>
 
-                    <p style={{marginBottom: "2px"}}>Please read the <em><a href = {termsOfUse} style={{color: "black"}} target = "_blank">Terms of Use</a></em></p>
+                    <p style={{marginBottom: "2px"}}>Please read the <em><a href = {termsOfUse} style={{color: "black"}} target = "_blank" rel="noreferrer">Terms of Use</a></em></p>
                     <Form.Group controlId="formBasicCheckbox">
                       <Form.Check type="checkbox" label="I agree to the Terms of Use" />
                     </Form.Group>

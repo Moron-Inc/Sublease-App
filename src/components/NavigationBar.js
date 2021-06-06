@@ -26,7 +26,7 @@ export const NavigationBar = () => {
 
   return(
     <Styles>
-      <Navbar expand="lg">
+      <Navbar expand="lg" style={{borderBottom: "solid 0.5px lightgrey"}}>
         <Navbar.Brand href="/" style={{paddingLeft: "4%"}}><img className="logo mr-1" src={Logo} alt="Logo"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
