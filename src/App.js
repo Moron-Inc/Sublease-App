@@ -16,6 +16,7 @@ import { About } from './pages/About';
 import { ContactUs } from './pages/ContactUs';
 
 import { SearchResults } from './pages/SearchResults';
+import { ResultView } from './pages/ResultView';
 import { NoMatch } from './pages/NoMatch';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/pages/About" component={About} />
           <Route path="/pages/ContactUs" component={ContactUs} />
           <Route path="/pages/SearchResults" component={SearchResults} />
+          <Route path="/pages/ResultView" component={ResultView} />
           <Route component={NoMatch} />
         </Switch>
         {/* <NavigationBar_loggedin />
