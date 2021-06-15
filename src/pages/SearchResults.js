@@ -5,30 +5,31 @@ import { filterPostsByQuery } from '../components/FilterPosts';
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 900.5px;                                                                                                                        //exact pixels aren't ideal
+  // height: 100%;
 `;
 
 export const SearchResults = (props) => {
 
   const { search } = window.location;
   const query = new URLSearchParams(search).get('s').toLowerCase().split(" ").join("");
-  const radioInput = new URLSearchParams(search).get('radio');
+  const radioInput = new URLSearchParams(search).get('type');
   const filteredPosts = filterPostsByQuery(query, radioInput);
 
   return(
     <Wrapper>
       <h2 style={{textAlign: "center", padding: "30px", margin: "0px"}}>Search {(radioInput==='1')?"Offer":"Interest"} Results</h2>
-      <Row style={{minHeight: "802.5px", marginLeft: "0px", marginRight: "0px", borderTop: "2px solid lightgrey"}}>                         {/*minHeight exact pixels aren't ideal*/}
+      <Row style={{height: '100%', marginLeft: "0px", marginRight: "0px", borderTop: "2px solid lightgrey"}}>
         <Col style={{maxWidth: "25%", borderRight: "2px solid lightgrey"}}>
+          <h3 style={{textAlign: "center"}}>Filters</h3>
         </Col>
 
         <Col style={{padding: "0px"}}>
-          <Row style={{marginLeft: "17px", marginRight: "17px", marginTop: "17px", marginBottom: "17px"}}>
+          <Row style={{marginLeft: "17px", marginRight: "17px", marginTop: "17px", marginBottom: "85px"}}>
             {filteredPosts.map((post) => (
               <Form action="/pages/ResultView" method="get">
                 <input
                   hidden="true"
-                  name="radio" 
+                  name="type" 
                   value={radioInput}
                 />
                   <button

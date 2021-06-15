@@ -5,7 +5,7 @@ import members from '../components/Members';
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  // height: 100%;
 `;
 
 export const About = (props) => (
@@ -50,7 +50,7 @@ export const About = (props) => (
     {members.map(function(val, index) {
         return(
           <div>
-            <Row className="row-padding">
+            <Row className="row-centered row-padding">
               <Col style={{order: (index%2===0)?1:12, justifyContent: "center", textAlign: (index%2===0)?"left":"right"}}>
                 <h3>{val.name}</h3>
                 <p><em>{val.title}</em></p>
@@ -73,10 +73,10 @@ export const About = (props) => (
         )
     })}
 
-
+{/* 
     <br/>
     <br/>
     <br/>
-    <div className="footer">footer directory stuff</div>
+    <div className="footer">footer directory stuff</div> */}
   </Wrapper>
 )

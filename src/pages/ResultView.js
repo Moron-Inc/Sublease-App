@@ -5,13 +5,13 @@ import { filterPostsByID } from '../components/FilterPosts';
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 900.5px;                                                                                                                        //exact pixels aren't ideal
+//   height: 100%;
 `;
 
 export const ResultView = (props) => {
     const { search } = window.location;
     const postID = new URLSearchParams(search).get('post');
-    const radioInput = new URLSearchParams(search).get('radio');
+    const radioInput = new URLSearchParams(search).get('type');
     const filteredPosts = filterPostsByID(postID, radioInput);
 
     return(

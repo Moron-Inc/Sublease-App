@@ -80,7 +80,7 @@
 .custom-container{
   background-image: url(./images/austin-sketch3.jpg);   /*this is not a free-to-use image*/
   background-size: cover;
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 65%;
 }
@@ -94,6 +94,12 @@
 .row-padding {
   padding-left: 25%;
   padding-right: 25%;
+}
+
+.row-location {
+  position: absolute; 
+  left: 25%; 
+  width: 50%;
 }
 
 .column-centered {
@@ -164,9 +170,11 @@
 .nav-link{
   color: black;
 }
+
 .nav-link:hover{
   color:#6A5ACD;
 }
+
 .nav-tabs, .nav-tabs:hover, .nav-tabs:focus {
   color: white;
 }
@@ -230,10 +238,20 @@ Form span{
 
 /*---------------------------------------------Footer---------------------------------------------*/
 .footer {
-  background: #CCCCFF;    /*#E7E7E7*/
-  padding: 8em 0;
-  color:#6A5ACD;
+  background: #434343;    /*#E7E7E7*/
+  padding: 1em 0;
+  color:white;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 17px;
+}
+
+.footerPosition {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
 }
 /*------------------------------------------------------------------------------------------------*/
 

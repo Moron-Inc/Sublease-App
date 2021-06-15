@@ -29,7 +29,7 @@ export const offerPosts = [
   ];
 
 export const filterPostsByQuery = (query, radioInput) => {
-    if (radioInput === '1'){
+    if (radioInput === 'offer'){
       if (!query) {
         return offerPosts;
       }
@@ -41,7 +41,7 @@ export const filterPostsByQuery = (query, radioInput) => {
         return (offerPostName.includes(query) || offerPostBed.includes(query) || offerPostBath.includes(query) || offerPostBedBath.includes(query));
       });
     }
-    else if (radioInput === '2'){
+    else if (radioInput === 'interest'){
       if (!query) {
         return interestPosts;
       }
@@ -56,12 +56,12 @@ export const filterPostsByQuery = (query, radioInput) => {
   };
 
 export const filterPostsByID = (postID, radioInput) => {
-  if (radioInput === '1'){
+  if (radioInput === 'offer'){
     return offerPosts.filter((offerPost) => {
       return (offerPost.id===postID);
     });
   }
-  else if (radioInput === '2'){
+  else if (radioInput === 'interest'){
     return interestPosts.filter((interestPost) => {
       return (interestPost.id===postID);
     });

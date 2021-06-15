@@ -16,11 +16,11 @@ export const SearchBar = () => {
     // const [checked, setChecked] = useState(false);
 
     const radios = [
-        { name: 'Offers', value: '1' },
-        { name: 'Interests', value: '2' },
+        { name: 'Offers', value: 'offer' },
+        { name: 'Interests', value: 'interest' },
       ];
     
-    const [radioValue, setRadioValue] = useState('1');
+    const [radioValue, setRadioValue] = useState('offer');
 
     return(
         <Form action="/pages/SearchResults" method="get">
@@ -31,7 +31,7 @@ export const SearchBar = () => {
                 <Row>
                     <Col style={{padding: "0px"}}>
                         <InputGroup>
-                            <FormControl type="text" placeholder="Search" className="" name="s"/>
+                            <FormControl required type="text" placeholder="Search" className="" name="s"/>
                             <InputGroup.Append>
                                 <Button className="integratedButton" type="submit">
                                     <img alt="Search icon" src={searchIcon}/>
@@ -49,7 +49,7 @@ export const SearchBar = () => {
                                 type="radio"
                                 variant="outline-info"
                                 className="radiobtn"
-                                name="radio"
+                                name="type"
                                 value={radio.value}
                                 checked={radioValue === radio.value}
                                 onChange={(e) => setRadioValue(e.currentTarget.value)}

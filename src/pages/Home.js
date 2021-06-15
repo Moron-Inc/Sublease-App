@@ -2,22 +2,24 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 import { SearchBar } from '../components/SearchBar';
+import backgroundpic from '../images/austin-sketch3.jpg';
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  height: fit-content;
 `;
 
 export const Home = () => (
   <Wrapper>
-    <div className="custom-container">
+    {/* <div className="custom-container"> */}
+    <img src={backgroundpic} style={{width: '100%', height: '65%', backgroundSize: 'cover'}}/>
       <SearchBar/>
-    </div> 
+    {/* </div>  */}
 
     <br/>
     <br/>
 
-    <Row className="row-centered">
+    <Row className="row-centered" >
       <div style={{width: "75%", textAlign: "center"}}>
         <h2 style={{borderBottom: "2px dotted"}}>How It Works</h2>
       </div>
@@ -37,6 +39,8 @@ export const Home = () => (
     <br/>
     <br/>
     <br/>
-    <div className="footer">footer directory stuff</div>
+    <br/>
+    <br/>
+    <br/>
   </Wrapper>
 )
