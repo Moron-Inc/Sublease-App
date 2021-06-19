@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Card, ToggleButton, InputGroup, Form, FormControl, Row, Col, ButtonGroup, Button } from 'react-bootstrap';
 import { filterPostsByID } from '../components/FilterPosts';
+// import { useHistory } from "react-router-dom";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -27,4 +28,14 @@ export const ResultView = (props) => {
             ))}
         </Wrapper>
     )
+
+
+    // const history = useHistory();
+
+    // const routeChange = () => {
+    //     let path = '../pages/SearchResults';
+    //     history.push(path);
+    // }
+
+    // const [checked, setChecked] = useState(false);
 }
